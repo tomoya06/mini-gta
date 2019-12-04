@@ -1,6 +1,6 @@
-import Phaser from 'phaser'
-import BootScene from './scenes/BootScene'
-import PlayScene from './scenes/PlayScene'
+import Phaser from 'phaser';
+import BootScene from './scenes/BootScene';
+import PlayScene from './scenes/PlayScene';
 
 
 function launch(containerId) {
@@ -13,12 +13,12 @@ function launch(containerId) {
       default: 'arcade',
       arcade: {
         gravity: { y: 300 },
-        debug: false
-      }
+        debug: false,
+      },
     },
-    scene: [BootScene, PlayScene]
-  })
+    scene: [BootScene, PlayScene],
+  });
 }
 
-export default launch
-export { launch }
+export default launch;
+export { launch };

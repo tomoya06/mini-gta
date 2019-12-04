@@ -13,20 +13,20 @@ export default {
     return {
       downloaded: false,
       gameInstance: null,
-      containerId: 'game-container'
-    }
+      containerId: 'game-container',
+    };
   },
   async mounted() {
-    const game = await import(/* webpackChunkName: "game" */ '@/game/game')
-    this.downloaded = true
+    const game = await import(/* webpackChunkName: "game" */ '@/game/game');
+    this.downloaded = true;
     this.$nextTick(() => {
-      this.gameInstance = game.launch(this.containerId)
-    })
+      this.gameInstance = game.launch(this.containerId);
+    });
   },
   destroyed() {
-    this.gameInstance.destroy(false)
-  }
-}
+    this.gameInstance.destroy(false);
+  },
+};
 </script>
 
 

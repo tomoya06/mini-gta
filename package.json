@@ -1,6 +1,6 @@
 {
   "name": "vue-phaser3",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Template for working with Phaser 3 in a Vue project",
   "author": "Markus Appel <markospoparkos@gmail.com>",
   "scripts": {
@@ -16,6 +16,12 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.0.5",
     "@vue/cli-service": "^4.0.5",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-vue": "^6.0.1",
     "node-sass": "^4.13.0",
     "sass-loader": "^8.0.0",
     "serve": "^11.2.0",
