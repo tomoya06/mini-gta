@@ -7,6 +7,10 @@ module.exports = {
         'plugin:vue/essential',
         'airbnb-base',
     ],
+    ignorePatterns: [
+        "src/assets/",
+        "node_modules/"
+    ],
     rules: {
         'linebreak-style': 'off',
         'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
